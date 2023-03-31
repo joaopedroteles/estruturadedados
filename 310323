@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <conio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+	//funções recursivas
+/*	
+	long fatorial(int n);
+	int main(void) {
+		int num = 1;
+		while(num) {
+			printf("numero? \n\n");
+			scanf("%d",&num);
+			printf("fatorial =%1d \n\n", fatorial(num));
+		}
+		getch();
+		
+	}
+	long fatorial (int n){
+		if (n == 0) return (1);
+		else
+		return(fatorial(n-1)*n );
+	}
+*/
+
+int main (void){
+	int agir = 5;
+	int *pAgir = 0;
+	//demonstração de uma troca
+	printf("troca de valores teste \n\n");
+	printf("Agir = %d\n",agir);
+	pAgir = &agir;
+	printf("*pAgir(agir)=%d\n", *pAgir);
+	//primeira troca de valores
+	printf("\n*pAgir = 7\n");
+	*pAgir = 7;
+	printf("*pAgir(agir)=%d\n", *pAgir);
+	printf("Agir = %d\n",agir);
+	//segunda troca
+	printf("\n*pAgir = 9\n");
+	agir = 9;
+	printf("*pAgir: %d\n", *pAgir);
+	printf("Agir: %d\n",agir);
+	getch();
+}
+
+
